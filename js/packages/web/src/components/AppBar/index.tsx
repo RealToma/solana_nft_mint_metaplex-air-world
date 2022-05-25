@@ -13,6 +13,9 @@ import {
 } from '../CurrentUserBadge';
 import { ConnectButton } from '@oyster/common';
 import { MobileNavbar } from '../MobileNavbar';
+import { Box } from '@material-ui/core';
+// import styled from "styled-components";
+import { MdFiberNew } from 'react-icons/md';
 
 const getDefaultLinkActions = (connected: boolean) => {
   return [
@@ -138,6 +141,16 @@ export const AppBar = () => {
           )}
           {connected && (
             <>
+              <Link to={`/art/create`} key={'explore'}>
+                <Box display="flex" alignItems={'center'}>
+                  <Box display={'flex'} alignItems="center">
+                    <MdFiberNew size={'30px'} color={'white'} />
+                  </Box>
+                  <Box display={'flex'} alignItems="center">
+                    <Button className="app-btn">Mint NFT</Button>
+                  </Box>
+                </Box>
+              </Link>
               <CurrentUserBadge
                 showBalance={false}
                 showAddress={true}
