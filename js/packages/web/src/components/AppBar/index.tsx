@@ -144,7 +144,7 @@ export const AppBar = () => {
               <Link to={`/art/create`} key={'explore'}>
                 <Box display="flex" alignItems={'center'}>
                   <Box display={'flex'} alignItems="center">
-                    <MdFiberNew size={'30px'} color={'white'} />
+                    <MdFiberNew size={'25px'} color={'white'} />
                   </Box>
                   <Box display={'flex'} alignItems="center">
                     <Button className="app-btn">Mint NFT</Button>
